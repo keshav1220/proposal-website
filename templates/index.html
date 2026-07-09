@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div id="cursorGlow"></div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-heart">❤️</div>
+        <h2>Preparing Something Special...</h2>
+        <p>Just a few seconds...</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <!-- Background Image -->
+        <img src="{{ url_for('static', filename='proposal.png') }}" class="hero-bg">
+
+        <!-- Dark Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Stars -->
+        <div id="stars"></div>
+
+        <!-- Hearts -->
+        <div id="hearts"></div>
+        <div id="explosion"></div>
+
+        <!-- Petals -->
+        <div id="petals"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+
+            <h1 class="title">
+                Will You Be Mine Forever? ❤️
+            </h1>
+
+            <p class="subtitle">
+                Every love story is beautiful,
+                <br>
+                but ours is my favourite.
+            </p>
+<div class="counter">
+
+    ❤️ Together Since ❤️
+
+    <div id="loveCounter"></div>
+
+</div>
+            <div class="buttons">
+
+                <button id="yesBtn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn">
+                    NO 😜
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Love Letter Popup -->
+
+    <div id="loveLetter">
+
+        <div class="letter">
+
+            <h2>❤️ Dear Mahek ❤️</h2>
+
+            <p id="typingText"></p>
+
+            <button id="closeBtn">
+                I Love You Too 💕
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Confetti -->
+
+    <canvas id="confetti"></canvas>
+
+    <!-- Fireworks -->
+
+    <canvas id="fireworks"></canvas>
+    <div id="flash"></div>
+    <!-- Background Music -->
+
+<audio id="bgMusic" loop>
+    <source src="{{ url_for('static', filename='music.mp3') }}" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">
+    🎵
+</button>
+    
+    <!-- ===========================
+<!-- MEMORY GALLERY -->
+
+<div id="gallery">
+
+    <div class="gallery-bg"></div>
+
+    <div class="gallery-content">
+
+        <h1>❤️ Our Beautiful Memories ❤️</h1>
+
+        <img id="galleryImage" src="" alt="Memory">
+
+        <p id="galleryCaption"></p>
+
+        <div class="gallery-controls">
+
+            <button id="prevPhoto">❮</button>
+
+            <span id="photoNumber"></span>
+
+            <button id="nextPhoto">❯</button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- FINAL SCREEN -->
+
+<div id="finalScreen">
+
+    <div class="final-content">
+
+        <h1>❤️ Thank You ❤️</h1>
+
+        <h2>For Being The Most Beautiful Part Of My Life</h2>
+
+        <p>
+
+            Every picture tells a story...
+
+            <br><br>
+
+            But my favourite story is
+
+            <span>YOU ❤️</span>
+
+        </p>
+
+        <button id="restartBtn">
+
+            ❤️ Watch Again
+
+        </button>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
